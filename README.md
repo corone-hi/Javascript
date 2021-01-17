@@ -57,3 +57,10 @@ Using a similar example from the last challenge, __if one item has a flex-grow v
 3. The __flex-basis__ property specifies the initial size of the item before CSS makes adjustments with flex-shrink or flex-grow.
 
 The units used by the flex-basis property are the same as other size properties (px, em, %, etc.). The value auto sizes items based on the content.
+
+⫸ There is a shortcut available to set several flex properties at once. The flex-grow, flex-shrink, and flex-basis properties can all be set together by using the flex property.
+
+For example, __flex: 1 0 10px;__ will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.
+
+The default property settings are flex: 0 1 auto;.
+
