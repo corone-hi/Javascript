@@ -64,3 +64,13 @@ For example, __flex: 1 0 10px;__ will set the item to flex-grow: 1;, flex-shrink
 
 The default property settings are flex: 0 1 auto;.
 
+- - -
+
+The __order__ property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.
+
+<https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/use-the-order-property-to-rearrange-items>
+
+- - -
+The final property for flex items is __align-self__. This property allows you to adjust each item's alignment individually, instead of setting them all at once. *This is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items.*
+
+__align-self__ accepts the same values as align-items and will override any value set by the align-items property.
