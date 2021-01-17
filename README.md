@@ -74,3 +74,27 @@ The __order__ property is used to tell CSS the order of how flex items appear in
 The final property for flex items is __align-self__. This property allows you to adjust each item's alignment individually, instead of setting them all at once. *This is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items.*
 
 __align-self__ accepts the same values as align-items and will override any value set by the align-items property.
+
+MDN: <https://developer.mozilla.org/en-US/docs/Web/CSS/align-self>
+
+- - - 
+
+### CSS -> GRID
+
+Turn any HTML element into a grid container by setting its display property to __grid__. This gives you the ability to use all the other properties associated with CSS Grid.
+
+Note: In CSS Grid, the parent element is referred to as the container and its children are called items.
+
+- - -
+
+Simply creating a grid element doesn't get you very far. You need to define the structure of the grid as well. To add some columns to the grid, use the __grid-template-columns__ property on a grid container as demonstrated below:
+
+```
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+}
+
+```
+
+-> This will give your grid two columns that are each 50px wide. The number of parameters given to the grid-template-columns property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.
