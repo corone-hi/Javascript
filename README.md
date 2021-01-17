@@ -155,3 +155,20 @@ grid-column: 1 / 3;
 This will make the item start at the first vertical line of the grid on the left and span to the 3rd line of the grid, consuming two columns
 
 <https://www.freecodecamp.org/learn/responsive-web-design/css-grid/use-grid-column-to-control-spacing> 
+
+
+Of course, you can make items consume multiple rows just like you can with columns. You define the horizontal lines you want an item to start and stop at using the __grid-row__ property on a grid item.
+
+- - -
+
+In CSS Grid, the content of each item is located in a box which is referred to as a cell. You can align the content's position within its cell horizontally using the __justify-self__ property on a grid item. By default, this property has a value of __stretch__, which will make the content fill the whole width of the cell. This CSS Grid property accepts other values as well:
+
+* __start__: aligns the content at the left of the cell,
+
+* __center__: aligns the content in the center of the cell,
+
+* __end__: aligns the content at the right of the cell.
+
+
+
+
