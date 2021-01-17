@@ -149,5 +149,9 @@ Here's an example:
 
 ```
 grid-column: 1 / 3;
+
+// start / end
 ```
 This will make the item start at the first vertical line of the grid on the left and span to the 3rd line of the grid, consuming two columns
+
+<https://www.freecodecamp.org/learn/responsive-web-design/css-grid/use-grid-column-to-control-spacing> 
