@@ -47,7 +47,7 @@ So far, all the properties in the challenges apply to the flex container (the pa
 
 1. The first is the __flex-shrink__ property. When it's used, it allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
 
-The flex-shrink property takes numbers as values. The higher the number, the more it will shrink compared to the other items in the container. For example, __if one item has a flex-shrink value of 1 and the other has a flex-shrink value of 3, the one with the value of 3 will shrink three times as much as the other.__
+> The flex-shrink property takes numbers as values. The higher the number, the more it will shrink    > compared to the other items in the container. For example, __if one item has a flex-shrink value of > 1 and the other has a flex-shrink value of 3, the one with the value of 3 will shrink three times   as much as the other.__
 
 
 2. The opposite of __flex-shrink__ is the __flex-grow__ property. Recall that flex-shrink controls the size of the items when the container shrinks. The flex-grow property controls the size of items when the parent container expands.
