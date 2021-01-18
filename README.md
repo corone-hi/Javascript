@@ -173,4 +173,37 @@ In CSS Grid, the content of each item is located in a box which is referred to a
 Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the __align-self__ property on an item. This property accepts all of the same values as justify-self from the last challenge.
 
 
+Sometimes you want all the items in your CSS Grid to share the same alignment. You can use the previously learned properties and align them individually, or you can align them all at once horizontally by using __justify-items__ on your grid container. This property can accept all the same values you learned about in the previous two challenges, the difference being that it will move all the items in our grid to the desired alignment.
 
+```
+justigy-items: center;
+```
+
+Using the __align-items__ property on a grid container will set the vertical alignment for all the items in our grid.
+
+
+- - -
+
+You can group cells of your grid together into an area and give the area a custom name. Do this by using __grid-template-areas__ on the container like this:
+
+```
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+```
+
+The code above merges the top three cells together into an area named header, the bottom three cells into a footer area, and it makes two areas in the middle row; advert and content. Note: Every word in the code represents a cell and every pair of quotation marks represent a row. In addition to custom labels, you can use a period (.) to designate an empty cell in the grid.
+
+
+- - -
+
+After creating an area's template for your grid container, as shown in the previous challenge, you can place an item in your custom area by referencing the name you gave it. To do this, you use the __grid-area__ property on an item like this:
+
+```
+.item1 {
+  grid-area: header;
+}
+```
+
+This lets the grid know that you want the item1 class to go in the area named header. In this case, the item will use the entire top row because that whole row is named as the header area.
