@@ -207,3 +207,52 @@ After creating an area's template for your grid container, as shown in the previ
 ```
 
 This lets the grid know that you want the item1 class to go in the area named header. In this case, the item will use the entire top row because that whole row is named as the header area.
+
+
+
+The __grid-area__ property you learned in the last challenge can be used in another way. If your grid doesn't have an areas template to reference, you can create an area on the fly for an item to be placed like this:
+
+```
+item1 { grid-area: 1/1/2/4; }
+```
+
+This is using the line numbers you learned about earlier to define where the area for this item will be. The numbers in the example above represent these values:
+```
+grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+```
+
+So the item in the example will consume the rows between lines 1 and 2, and the columns between lines 1 and 4.
+
+- - -
+
+When you used __grid-template-columns__ and __grid-template-rows__ to define the structure of a grid, you entered a value for each row or column you created.
+
+Let's say you want a grid with 100 rows of the same height. It isn't very practical to insert 100 values individually. Fortunately, there's a better way - by using the __repeat__ function to specify the number of times you want your column or row to be repeated, followed by a comma and the value you want to repeat.
+
+Here's an example that would create the 100 row grid, each row at 50px tall.
+
+```
+grid-template-rows: repeat(100, 50px);
+```
+
+You can also repeat multiple values with the repeat function and insert the function amongst other values when defining a grid structure. Here's what that looks like:
+```
+grid-template-columns: repeat(2, 1fr 50px) 20px;
+```
+
+This translates to:
+```
+grid-template-columns: 1fr 50px 1fr 50px 20px;
+```
+Note: The 1fr 50px is repeated twice followed by 20px.
+
+
+- - -
+
+There's another built-in function to use with __grid-template-columns__ and __grid-template-rows__ called minmax. It's used to limit the size of items when the grid container changes size. To do this you need to specify the acceptable size range for your item. Here is an example:
+
+```
+grid-template-columns: 100px minmax(50px, 200px);
+```
+
+In the code above, grid-template-columns is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
