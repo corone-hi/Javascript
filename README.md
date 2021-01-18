@@ -256,3 +256,19 @@ grid-template-columns: 100px minmax(50px, 200px);
 ```
 
 In the code above, grid-template-columns is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
+
+
+The __repeat__ function comes with an option called __auto-fill.__ This allows you to automatically insert as many rows or columns of your desired size as possible depending on the size of the container. You can create flexible layouts when combining auto-fill with minmax, like this:
+
+```
+repeat(auto-fill, minmax(60px, 1fr));
+```
+
+When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one. Note: If your container can't fit all your items on one row, it will move them down to a new one.
+
+
+- - -
+
+__auto-fit__ works almost identically to __auto-fill.__ The only difference is that when the container's size exceeds the size of all the items combined, __auto-fill__ keeps inserting empty rows or columns and pushes your items to the side, while __auto-fit__ collapses those empty rows or columns and stretches your items to fit the size of the container.
+
+Note: If your container can't fit all your items on one row, it will move them down to a new one.
