@@ -170,5 +170,7 @@ In CSS Grid, the content of each item is located in a box which is referred to a
 * __end__: aligns the content at the right of the cell.
 
 
+Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the __align-self__ property on an item. This property accepts all of the same values as justify-self from the last challenge.
+
 
 
