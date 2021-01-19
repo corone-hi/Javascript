@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #f7f1e3;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Bazzi';
+}
+
+.wrap{
+    min-height: 400px;
+    position:relative;
+}
+.pic{
+    width: 80%;
+    margin-left: 30%;
+}
+
+.mainPic{
+    width: 50%;
+}
+
+.noticeWrap{
+    margin-left: 33%;
+    margin-top: -50%;
+}
+
+.age{
+    display:flex;
+}
+
+#input{
+    border:hidden ;
+    border-radius: 12px;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    font-family:'Bazzi';
+    font-size:20px;
+
+}
+
+#okay{
+    border: hidden;
+    border-radius: 12px;
+    align-items: center;
+    font-family:'Bazzi';
+    font-size: 20px;
+    justify-self: end;
+}
+
+#notice{
+    font-family: 'Bazzi';
+    font-size: 15px;
+    padding-left:20%;
+}
+
+@media (max-width: 900px){
+    #input{
+        font-size:10px;
+        height: 90px;
+    }
+    #okay{
+        font-size:10px;
+    }
+    #notice{
+        padding-left: 8%;
+    }
+  }
+
+  @media (max-width: 600px){
+    #input{
+        height: 40px;
+        font-size:10px;
+    }
+
+    #okay{
+        font-size:8px;
+    }
+  }
+
+  @media (max-width: 450px){
+    #input{
+        height: 30px;
+        font-size:5px;
+    }
+
+    #okay{
+        font-size:5px;
+    }
+
+    #notice{
+        padding-left:-2;
+        font-size:5px;
+    }
+
+    .age{
+        display:flex;
+        margin-left: 8%;
+        margin-top: -55%;;
+    }
+  }
+
+  
+
+  
